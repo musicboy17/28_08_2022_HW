@@ -20,15 +20,6 @@ int columnsLength = columns;
 
 double [,] table = new double[rows, columns]; 
 
-// for (rows = 0; rows < rowsLength; rows++)
-// {
-//     for (columns = 0; columns  < columnsLength; columns++)
-//     {
-//         Console.Write($"{table[rows, columns]} ");
-//     }
-//     Console.WriteLine();
-// }
-
 void FillArray(double[,] table)
 {
     for (int i = 0; i < rowsLength; i++)

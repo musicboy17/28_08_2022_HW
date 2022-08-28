@@ -32,17 +32,27 @@ for (rows = 0; rows < rowsLength; rows++)
     }
     Console.WriteLine();
 }
-int summ = 0;
+
+Console.WriteLine("Среднее арифметическое: ");
+
+double summ = 0;
 double arithmeticMean = 0;
-for (int i = 0; i < columnsLength; i++)
+
+for (int k = 0; k < columnsLength; k++)
 {
-    for (int j = 0; j < rowsLength; j++)
-    {
-        summ = summ + table[i, j];
+    
+
+
+
+    for (int i = 0; i < rowsLength; i++)
+{
+          summ = summ + table[i, k];
         
-    }
-      arithmeticMean = summ / columnsLength-1;
-
-      Console.Write($"{arithmeticMean}   ");
-
 }
+      // Console.WriteLine($"{summ}");
+      arithmeticMean = summ / (rowsLength);
+        summ = 0;
+      Console.Write($"{arithmeticMean}       ");
+}
+
+

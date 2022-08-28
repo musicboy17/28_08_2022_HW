@@ -38,7 +38,7 @@ Console.WriteLine("Среднее арифметическое: ");
 double summ = 0;
 double arithmeticMean = 0;
 
-for (int k = 0; k < columnsLength; k++)
+for (int j = 0; j < columnsLength; j++)
 {
     
 
@@ -46,7 +46,7 @@ for (int k = 0; k < columnsLength; k++)
 
     for (int i = 0; i < rowsLength; i++)
 {
-          summ = summ + table[i, k];
+          summ = summ + table[i, j];
         
 }
       // Console.WriteLine($"{summ}");

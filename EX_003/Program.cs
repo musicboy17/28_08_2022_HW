@@ -32,5 +32,17 @@ for (rows = 0; rows < rowsLength; rows++)
     }
     Console.WriteLine();
 }
+int summ = 0;
+double arithmeticMean = 0;
+for (int i = 0; i < columnsLength; i++)
+{
+    for (int j = 0; j < rowsLength; j++)
+    {
+        summ = summ + table[i, j];
+        
+    }
+      arithmeticMean = summ / columnsLength-1;
 
+      Console.Write($"{arithmeticMean}   ");
 
+}
